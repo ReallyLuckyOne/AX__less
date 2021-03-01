@@ -1,0 +1,93 @@
+// main: ../style.less
+
+.section__process {
+    background: @white;
+}
+
+.section__title {
+    text-transform: uppercase;
+    font-weight: 400;
+    font-size: 36px;
+    font-family: 'Raleway', sans-serif;
+    color: @title;
+    padding-top: 90px;
+
+    &:after {
+        display: block;
+        content: "";
+
+        width: 65px;
+        height: 3px;
+
+        background: @orange;
+        margin: 30px auto;
+        
+        @media @max-530 {
+            margin: 15px auto;
+        }
+    }
+    
+    &--stylish {
+        color: @white;
+        
+        &:after {
+            background-color: @white;
+        } 
+    }
+    @media @max-380 {
+        font-size: 30px;
+    }
+}
+
+.section__header {
+    text-align: center; 
+}
+
+.section__text {
+    font-size: 14px;
+    font-weight: 400;
+    
+    color: @text;
+    
+    &--stylish {
+        color: @white;
+        opacity: .8;
+        font-family: 'Raleway', sans-serif;
+    }
+}
+
+.section__pricing {
+    background: #f5f5f5;
+}
+
+/* General for slider */
+
+.slick-track {
+    display: flex;
+}
+
+.slick-list {
+    overflow: hidden;
+}
+
+/* for custom section */
+
+.custom__section {
+    background: url("/img/custom--section_02.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+
+}
+
+/* leveling things */
+
+.align {
+    text-align: center;
+}
+.no-scroll {
+    overflow-y: hidden;
+}
+
+
+

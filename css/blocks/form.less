@@ -1,0 +1,156 @@
+// main: ../style.less
+
+.fHome {
+    width: 365px;
+    height: 347px;
+
+    background-color: @white;
+    border-radius: 5px;
+    overflow: hidden;
+
+    @media @max-950 {
+        display: none;
+    }
+}
+
+.form__title {
+    font-size: 20px;
+    font-weight: 700;
+
+    display: block;
+    width: 100%;
+    background: @fHome;
+
+    padding: 12px 0;
+    line-height: 1.1;
+
+    text-transform: uppercase;
+    text-align: center;
+
+    b {
+        color: @orange;
+    }
+}
+
+.form__inputHome,
+.form__inputCon {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    input {
+
+        padding: 9px 14px;
+        margin-top: 30px;
+
+        font-size: 14px;
+        font-weight: 400;
+        font-family: inherit;
+
+        color: @black;
+        outline: none;
+        border: none;
+        border-bottom: 1px solid lighten(@pHolder, 10%);
+
+        opacity: .8;
+
+        &::placeholder {
+            color: @pHolder;
+        }
+
+        &:focus {
+            box-shadow: 0 0 7px @focus;
+            opacity: 1;
+        }
+
+        &:hover {
+            opacity: 1;
+        }
+    }
+}
+
+.form__inner {
+    display: flex;
+    justify-content: space-between;
+
+    margin-top: 50px;
+
+    textarea {
+        resize: none;
+
+        letter-spacing: .5px;
+        -ms-overflow-style: none;
+
+        width: 47%;
+        height: auto;
+
+        font-size: 14px;
+        font-weight: 400;
+        font-family: inherit;
+        outline: none;
+
+        border: none;
+        border-bottom: 1px solid #d6d6d6;
+
+        color: @black;
+
+        padding: 9px 14px;
+
+        &:focus {
+            box-shadow: 0 0 7px @focus;
+        }
+
+        &::placeholder {
+            color: @pHolder;
+        }
+
+        @media @max-650 {
+            width: 90%;
+
+            height: 100px;
+            margin-top: 30px;
+        }
+
+        &._error {
+            box-shadow: 0 0 1rem red;
+        }
+    }
+
+    @media @max-650 {
+        flex-direction: column;
+        align-items: center;
+
+        margin-top: 30px;
+    }
+}
+
+.form__inputHome {
+
+    input {
+        width: 80%;
+        
+        &._erroriwe {
+            box-shadow: 0 0 1rem red;
+        }
+    }
+}
+
+.form__inputCon {
+    width: 47%;
+
+    input {
+        width: 100%;
+
+        &:first-child {
+            margin-top: 0;
+        }
+
+        &._error {
+            box-shadow: 0 0 1rem red;
+        }
+    }
+
+    @media @max-650 {
+        width: 90%;
+    }
+}

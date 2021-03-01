@@ -1,0 +1,45 @@
+// main: ../style.less
+
+
+.process {
+    display: flex;
+    padding-bottom: 70px;
+    
+    @media @max-850 {
+        display: block;
+    }
+}
+
+.process__item {
+    width: 33.33333%;
+    text-align: center;
+    
+    padding: 0 15px;
+    margin-top: 100px;
+    
+    @media @max-850 {
+        width: 100%;
+        margin-top: 30px;
+        padding: 0 10px;
+    }
+}
+
+.process__title {
+    font-size: 20px;
+    font-weight: bold;
+    
+    color: @title;
+    margin: 30px 0;
+    
+    @media @max-850 {
+       margin: 15px 0; 
+    }
+}
+
+.process__text {
+    font-size: 14px;
+    font-weight: 400;
+    color: @text;
+
+    line-height: 1.5;
+}

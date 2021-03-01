@@ -1,0 +1,43 @@
+// main: ../style.less
+
+.footer {
+    background: @black;
+}
+
+.footer__icons {
+    padding: 15px 0 10px;
+    text-align: center;
+    
+    @media @max-380 {
+        padding: 12px 0 6px;
+    }
+}
+
+.footer__item {
+    font-size: 24px;
+    
+    text-decoration: none;
+
+    color: @icon;
+    margin-left: 20px;
+
+    transition: color .2s linear;
+}
+
+.footer__item:first-child {
+    margin-left: 0;
+}
+
+.footer__item:hover {
+    color: darken(@icon, 20%);
+}
+
+.footer__text {
+    font-size: 14px;
+    font-weight: 400;
+    
+    color: @text;
+    padding-bottom: 10px;
+    text-align: center;
+
+}

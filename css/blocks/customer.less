@@ -1,0 +1,102 @@
+// main: ../style.less
+.customer__slider {
+    position: relative;
+    margin-bottom: 50px;
+}
+
+.customer__item {
+    width: 280px;
+    padding: 40px 15px 0;
+}
+
+.customer__text {
+    font-size: 14px;
+    font-weight: 400;
+    font-style: italic;
+
+    padding: 25px 10px;
+    border-radius: 10px;
+    
+    color: @text;
+    background-color: @fHome;
+}
+
+.customer__about {
+    display: flex;
+    padding-top: 20px;
+}
+
+.customer__characteristic {
+    margin: auto 0 auto 14px;
+}
+
+.customer__name {
+    font-size: 20px;
+    font-weight: 700;
+
+    color: @title;
+}
+
+.customer__profession {
+    font-size: 14px;
+    font-weight: 400;
+    
+    color: @text;
+}
+
+/* customer slider */
+
+.customer__slider .slick-dots {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-left: 0;
+
+}
+.customer__slider .slick-dots li {
+    list-style: none;
+    padding: 15px 0 0 10px;
+
+}
+
+.customer__slider .slick-dots li:first-child { 
+    padding-left: 0;
+}
+
+.customer__slider .slick-dots button {
+    display: block;
+    font-size: 0;
+    padding: 0;
+    
+    width: 10px;
+    height: 10px;
+    
+    border-radius: 50%;
+    border: .1rem solid transparent;
+    outline: none;
+    background-color: #585858;
+}
+
+
+.customer__slider .slick-dots li.slick-active button {
+    background-color: lighten(#585858, 30%);
+    
+    display: block;
+    width: 15px;
+    height: 15px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

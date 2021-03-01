@@ -1,0 +1,59 @@
+// main: ../style.less
+
+.nav__link {
+
+    font-size: 14px;
+    color: @white;
+    text-decoration: none;
+    margin-left: 40px;
+    opacity: .69; 
+    
+    transition: opacity .2s linear;
+    
+    &:hover {
+        opacity: 1;
+    }
+    
+    &:first-child {
+        margin-left: 0;
+        
+        @media @max-650 {
+            padding-top: 20px;
+        }
+    } 
+    
+    @media @max-650 {
+        padding-bottom: 25px;
+        font-size: 16px;
+    }
+}
+
+.navigation {
+
+    @media @max-650 {
+
+        position: absolute;
+
+        flex-direction: column;
+        background: rgba(0, 0, 0, 0.85);
+
+        top: 65px;
+        right: 0;
+        text-align: right;
+        padding-right: 30px;
+
+        width: 100%;
+        z-index: 10;
+        display: none;
+        
+        &.show {
+            display: flex;
+        }
+    }
+    
+    &.active {
+        display: flex;
+    }
+    
+}
+

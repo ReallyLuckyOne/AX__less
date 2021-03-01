@@ -1,0 +1,122 @@
+// main: ../style.less
+
+.plans {
+    padding: 80px 0;
+    
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+    
+    @media @max-1080 {
+        flex-direction: column;
+        padding: 10px 0 80px 0;
+    }
+    @media @max-380 {
+        padding-bottom: 40px;
+    }
+}
+
+.plan__firstThird {
+    height: 457px;
+    width: 340px;
+    text-align: center;
+    
+    background: @white;
+    margin-top: 43px;
+}
+
+.plan__name {
+    font-size: 20px;
+    font-weight: 700;
+
+    padding: 15px;
+
+    border-bottom: 1px solid #fff;
+    color: @white;
+    background: @bg;
+}
+
+.plan__price {
+    height: 150px;
+    
+    border-bottom: 5px solid @orange;
+    color: @white;
+    background: @bg;
+    
+    font-family: 'Raleway', sans-serif;
+}
+
+.plan__priceUp {
+    font-size: 40px;
+    font-weight: bold;
+    color: @white; 
+}
+
+.plan__cost {
+    font-size: 94px;
+    font-weight: bold;
+    color: @white;
+}
+
+.plan__priceDown {
+    font-size: 14px;
+    font-style: italic;
+    font-weight: 600;
+    letter-spacing: 1.3px;
+    
+    opacity: .5;
+    color: @white;
+}
+
+.plan__characteristics {
+    font-size: 14px;
+    font-weight: normal;
+    font-family: 'Raleway', sans-serif;
+
+    border: 1px solid #f5f5f5;
+    text-transform: uppercase;
+
+    color: @text;
+    padding: 12px 0;
+}
+
+.plan__second {
+    height: 497px;
+    width: 340px;
+    text-align: center;
+    background: @white;
+}
+
+.plan__popular {
+    height: 40px;
+    width: 100%;
+    background: @orange;
+    padding-top: 7px;
+}
+
+.plan__text {
+    font-size: 14px;
+    font-weight: 700;
+    
+    color: @white;
+    text-transform: uppercase;
+}
+
+.plan__second,
+.plan__firstThird {
+    
+    @media @max-1080 {
+        margin: 30px auto 0;  
+    }
+    
+    @media @max-380 {
+        width: 290px;
+    }
+}
+
+
+
+
+
+
+

@@ -1,0 +1,151 @@
+// main: ../style.less
+
+.btn {
+    display: inline-block;
+
+    font-size: 15px;
+    font-weight: 600;
+
+    text-decoration: none;
+
+    border: none;
+    outline: none;
+
+    cursor: pointer;
+
+    transition: background-color .2s linear;
+
+    &--home, 
+    &--custom {
+        padding: 10px 25px;
+
+        border: 2px solid @white;
+        color: @white;
+
+        &:hover {
+            background-color: @white;
+            color: @black;
+        }
+    }
+    &--custom {
+        margin: 25px 0 50px;
+    }
+    &--home {
+        @media @max-950 {
+            margin-bottom: 30px;
+        }
+
+    }
+
+    &--log {
+        padding: 15px 0;
+        margin-top: 50px;
+        width: 100%;
+
+        background-color: @orange;
+        color: @white;
+
+        &:hover {
+            background-color: darken(@orange, 10%);
+        }
+    }
+
+    &--ffeature,
+    &--contact {
+        color: @white;
+        background: @orange;
+
+        border-radius: 3px;
+        margin-top: 20px;
+        padding: 14px 25px;
+
+        &:hover {
+            background-color: darken(@orange, 10%);
+        }
+    }
+    
+    &--ffeature {
+        @media @max-650 {
+            margin-top: 10px;
+        }
+    }
+    
+    &--contact {
+        margin-top: 30px;
+        margin-bottom: 60px;
+    }
+
+    &--fea {
+        width: 110px;
+        height: 120px;
+        font-weight: bold;
+
+        color: @white;
+        background: @title;
+
+        text-transform: uppercase;
+
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        
+        margin-bottom: 1px;
+        
+        @media @max-650 {       
+            width: 90px;
+            height: 90px;
+            margin-right: 1px;
+        }
+    }
+
+    &.first {
+        border-top-left-radius: 4px;
+        border-top-right-radius: 4px;
+        
+        @media @max-650 {
+            border-bottom-left-radius: 4px;
+            border-top-right-radius: 0;
+        }
+    }
+
+    &.third {
+        border-bottom-left-radius: 4px;
+        border-bottom-right-radius: 4px;
+        
+        @media @max-650 {
+            border-bottom-left-radius: 0;
+            border-top-right-radius: 4px;
+        }
+    }
+
+    &.first:hover,
+    &.second:hover,
+    &.third:hover {
+        background: @orange;
+    }
+    
+            
+    @media @max-380 {
+        font-size: 14px; 
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
